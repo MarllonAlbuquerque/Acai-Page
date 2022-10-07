@@ -1,4 +1,3 @@
-
 body {
 	overflow-x: hidden;
 }
@@ -82,7 +81,7 @@ body {
     padding: 0;
     text-align: center;
     color: white;
-    background: url(./img/Design\ sem\ nome\ \(1\).png) no-repeat bottom center scroll;
+    background: url(./img/Design\ sem\ nome\ \(1\).png);
     background-position: 30% 45%;
     background-color: black;
     -webkit-background-size: cover;
@@ -269,6 +268,86 @@ body {
     text-align: center;
 }
 
+#divslide{
+    width: auto;
+    height: 600px;
+    overflow: hidden;
+    background-color: rgba(137, 43, 226, 0.482);
+}
+#slides{
+    height: 520px;
+    width: 820px;
+    border-radius: 20px;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 350px;
+    
+    
+}
+#slides input{
+    display: none;
+}
+
+#slidecamada2{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 5px;
+    border: 2px solid #ff9900;
+    background-color: #ff9900;
+    margin: 6px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+.bar:hover{
+    background-color: #ffffff;
+    border: #ffffff;
+}
+
+#radio1:checked ~ .s1{
+    margin-left: 0;
+
+}
+#radio2:checked ~.s1{
+    margin-left: -20%;
+}
+#radio3:checked ~.s1{
+    margin-left: -40%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:400px) {
@@ -322,3 +401,4 @@ body {
     }
     
 }
+
