@@ -276,7 +276,7 @@ body {
 }
 #slides{
     height: 520px;
-    width: 820px;
+    width: auto;
     border-radius: 20px;
     position: absolute;
     overflow: hidden;
@@ -342,42 +342,56 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 @media screen and (max-width:400px) {
     body{
         width: auto;
+        overflow-x: hidden;
     }
 
     .navbar{
-        overflow: visible;
+        overflow:hidden;
+    }
+    .navbar .container-fluid img{
+       margin-left: 150px;
+
     }
 
-    #msginiciar #img1{
-        width: 400px;
-        height: 600px;
-        margin: auto;
+    #iniciar {
+        background-color: #f19b1b;
+        width: auto;
+        height: 453px;
+        position: relative;
+        overflow: hidden;
     }
-    #msginiciar #img2{
-        width: 0px;
-        height: 0px;
-
+    #msginiciar{
+        display: block;
+        width: 100vw;
+        height: 450px;
+        padding: 0;
+        text-align: center;
+        color: white;
+        background: url(./img/Design\ sem\ nome\ \(1\).png);
+        background-position: 30% 45%;
+        background-color: black;
+        
     }
     #msginiciar button{
-        top: 90%; 
+        top: 50%;
+        margin-left: -70px; 
     }
     #msginiciar #btiniciar .bi{
-        top:90%;
-        left: 63%;
+        top:50%;
+        margin-left: -40%;
     }
     .navbar .container-fluid .navbar-brand{
         margin: auto;
+    }
+    #cardapio{
+        background-color: rgb(255, 255, 255);
+        width: auto;
+        height: 1100px;
+        position: relative;
+        overflow: hidden;
     }
 
     #cardapio #tamanho{
@@ -399,6 +413,56 @@ body {
     #cardapio #acompanhamento .bi{
         margin-left: 40%;
     }
+
+    #divslide {
+        width: auto;
+        height: 467px;
+        overflow: hidden;
+        background-color: rgba(137, 43, 226, 0.482);
+    }
+    #slides{
+        height: 366px;
+        width: auto;
+        border-radius: 20px;
+        position: absolute;
+        overflow: hidden;
+        margin-top: 50px;
+        margin-left: 2px;
+    }
+    #quemsomos #txtquemsomos{
+        width: 350px;
+        height: 400px;
+        background-color: #f09b3a98;
+        display: flex;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 3%;
+        border-radius: 300px;
+        color: white;
+        font-family: 'Caveat', cursive;
+    }
+    #final{
+        width: auto;
+        height: 500px;
+        background-color: #f19b1b;
+        position: relative;
+    }
+    #final img{
+        margin-left: 30%;
+        width: 200px;
+        height: 200px;
+    }
+    #final button{
+        margin-right: 70px;
+        border-top:none;
+        border-left: none;
+        border-right: none;
+        font-size: 20px;
+    }
+    #final #bt1{
+        margin-left: 1%;
+    }
+    
     
 }
 
