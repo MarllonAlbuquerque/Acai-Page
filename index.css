@@ -276,7 +276,7 @@ body {
 }
 #slides{
     height: 520px;
-    width: auto;
+    width: 800px;
     border-radius: 20px;
     position: absolute;
     overflow: hidden;
