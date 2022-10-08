@@ -145,6 +145,14 @@ body {
     margin-left: 80px;
 
 }
+#cardapio #tamanho #tit1{
+    font-size: 45px;
+
+}
+#cardapio #acompanhamento #tit2{
+    font-size: 45px;
+
+}
 #cardapio #tamanho h4{
     color: white;
     font-family: 'Caveat', cursive;
@@ -431,6 +439,10 @@ body {
         overflow: hidden;
         margin-top: 50px;
         margin-left: 2px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
     }
     #quemsomos #txtquemsomos{
         width: 350px;
