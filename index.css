@@ -4,15 +4,17 @@ body {
 
 .navbar{
     height: 100px;
-    font-size: 35px;
+    font-size: 20px;
     font-family: 'Caveat', cursive;
     border-bottom: 2px solid;
     border-color: rgba(0, 0, 0, 0.115);
-    overflow: hidden;  
+    overflow: hidden;
+    position: absolute;
+    background: url(./img/img2.jpg); 
 }
 
 #navbarNav .navbar-nav .nav-item .nav-link{
-    color: rgb(252, 252, 252);
+    color: rgba(255, 255, 255, 0.761);
 }
 
 #navbarNav .navbar-nav .nav-item .bi{
@@ -30,7 +32,6 @@ body {
     color:  rgba(140, 0, 255, 0.241);
 }
 #navbarNav .navbar-nav .nav-item:hover{
-    border-radius: 30px;
     border-color: aliceblue;
     border-width: 2px;
     border-style: solid;
@@ -47,8 +48,10 @@ body {
 #navbarNav .navbar-nav .bi{
     font-size: 20px;
     color: white;
-    margin-right: 15px;
-    margin-top: 25px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 #navbarNav .navbar-nav .bi:hover{
     font-size: 25px;
@@ -66,422 +69,137 @@ body {
 
 
 
-
-#iniciar{
-    background-color:#f19b1b;
-    width: auto;
-    height: 600px;
-    position: relative;
-    overflow: hidden;
-}
-#msginiciar{
+#inicio{
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: 600px;
     padding: 0;
     text-align: center;
     color: white;
-    background: url(./img/Design\ sem\ nome\ \(1\).png);
+    background: url(./img/img2.jpg);
     background-position: 30% 45%;
-    background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-#msginiciar button{
-    border-radius: 10px;
-    background-color: rgb(150, 71, 223);
+#inicio #btiniciar{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(240, 248, 255, 0);
+    margin-left: 100px;
+    margin-top: 250px;
+    position: absolute;
+}
+
+#inicio #btiniciar button{
+    border-radius: 50px;
+    background-color: rgba(132, 0, 255, 0.76);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     margin: 0;
     width: 250px;
     height: 60px;
     position: absolute;
-    top: 70%;
-    left: 70%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
-#msginiciar button:hover{
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    
-}
-
-#msginiciar #btiniciar .bi{
-    position: absolute;
-    top: 70%;
-    left: 73.5%;
-    margin-right: -50%;
+    border: none;
     color: white;
-    transform: translate(-50%, -50%)
-
+    animation: jumping linear 1s infinite;
 }
 
-#cardapio{
-    background-color: rgb(255, 255, 255);
+
+@keyframes jumping{
+    from{transform:translatey(-15px);}
+    50%{transform:translatey(0);}
+    to{transform:translatey(-15px);}
+
+}
+#divs{
+    
     width: auto;
     height: 600px;
-    position: relative;
+    background:url(./img/imgcc.jpg);
     overflow: hidden;
-}
-#cardapio h1{
-    font-size: 40px;
-    font-family: 'Caveat', cursive;
-    color: #f19c1b;
-    text-align: center;
-    margin-top: 10px;
-}
-
-#cardapio #tamanho{
-    width: 600px;
-    height: 500px;
-    background-color: rgba(137, 43, 226, 0.482);
-    float: left;
-    border-radius: 30px;
-    margin-left: 80px;
-
-}
-#cardapio #tamanho #tit1{
-    font-size: 45px;
-
-}
-#cardapio #acompanhamento #tit2{
-    font-size: 45px;
-
-}
-#cardapio #tamanho h4{
-    color: white;
-    font-family: 'Caveat', cursive;
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    font-size: 30px;
-
-}
-
-#cardapio #tamanho .bi{
-    font-size: 65px;
-    color: #ffffff;
-    margin-left: 50%;
-}
-
-#cardapio #acompanhamento{
-    width: 600px;
-    height: 500px;
-    background-color: #8a2ce27d;
-    float: right;
-    border-radius: 30px;
-    margin-right: 80px;
-
-}
-
-#cardapio #acompanhamento h4{
-    color: white;
-    font-family: 'Caveat', cursive;
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    font-size: 30px;
-
-}
-
-#cardapio #acompanhamento .bi{
-    font-size: 65px;
-    color: white;
-    margin-left: 50%;
-}
-
-#quemsomos{
-    background:linear-gradient(45deg,#f19c1b,#f1b11bb9,#f1b11b81,#8a2ce228,#8a2ce24d,#8a2ce27d);
-    width: auto;
-    height: 600px;
-    position: relative;
-    overflow: hidden;
-    
-}
-#quemsomos img{
-    position: absolute;
-    margin-left: 25%;
-    
-}
-#quemsomos #txtquemsomos{
-    width: 500px;
-    height: 400px;
-    background-color: #f09b3a98;
-    display: flex;
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 3%;
-    border-radius: 300px;
-    color: white;
-    font-family: 'Caveat', cursive;
-
-}
-#quemsomos #txtquemsomos:hover{
-    background-color: #f09b3abe;
-
-}
-#quemsomos #txtquemsomos h3{
-    font-size: 40px;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-#quemsomos #txtquemsomos h5{
-    font-size: 20px;
-    margin-top:120px;
-    margin-left: 10px;
-    position: absolute;
-
-}
-
-
-#final{
-    width: auto;
-    height: 400px;
-    background-color: #f19b1b;
-    position: relative;
-}
-#final img{
-    margin-left: 40%;
-    width: 200px;
-    height: 200px;
-}
-#final button{
-    margin-right: 50px;
-    border-top:none;
-    border-left: none;
-    border-right: none;
-    font-size: 20px;
-}
-#final #bt1{
-    margin-left: 31%;
-}
-#final #iconslist{
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    margin-top: 30px;
-
-}
-#final #iconslist .bi{
-    margin-right: 50px;
-
-}
-#final p{
-    color: #ffffff;
-    text-align: center;
-}
-
-#divslide{
-    width: auto;
-    height: 600px;
-    overflow: hidden;
-    background-color: rgba(137, 43, 226, 0.482);
 }
 #slides{
-    height: 520px;
-    width: 800px;
-    border-radius: 20px;
-    position: absolute;
-    overflow: hidden;
-    margin-top: 50px;
-    margin-left: 350px;
-    
-    
+    width: 400%;
+    height: 400px;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 1%;
 }
 #slides input{
     display: none;
 }
-
-#slidecamada2{
-    display: flex;
-    width: 500%;
-    height: 100%;
-}
 .slide{
-    width: 20%;
-    transition: .6s;
+    width: 25%;
+    position: relative;
 }
-
 .slide img{
-    width: 100%;
-    height: 100%;
+    width: 70vw;
+    height: 575px;
+    border-radius: 20px;
 }
-
-#navegacao{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
+.manual-navigation{
+    position:absolute;
+    width: 800px;
+    margin-top: -390px;
+    margin-left: 25%;
     display: flex;
+    justify-content: center;
 }
-
-.bar{
-    width: 70px;
-    height: 5px;
-    border: 2px solid #ff9900;
-    background-color: #ff9900;
-    margin: 6px;
+.manual-btn{
+    border: 5px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: .4s;
-
+    margin-right: 30px;
+    transition: 1s; 
 }
-.bar:hover{
-    background-color: #ffffff;
-    border: #ffffff;
+.manual-btn:hover{
+    background-color: #fff;
 }
 
-#radio1:checked ~ .s1{
+#radio1:checked~.first{
     margin-left: 0;
-
 }
-#radio2:checked ~.s1{
-    margin-left: -20%;
+#radio2:checked~.first{
+    margin-left: -25%;
 }
-#radio3:checked ~.s1{
-    margin-left: -40%;
+#radio3:checked~.first{
+    margin-left: -50%;
 }
 
-
-
-
-
-@media screen and (max-width:430px) {
-    body{
-        width: auto;
-        overflow-x: hidden;
-    }
-
-    .navbar{
-        overflow:hidden;
-    }
-    .navbar .container-fluid img{
-       margin-left: 150px;
-
-    }
-
-    #iniciar {
-        background-color: #f19b1b;
-        width: auto;
-        height: 453px;
-        position: relative;
-        overflow: hidden;
-    }
-    #msginiciar{
-        display: block;
-        width: 100vw;
-        height: 450px;
-        padding: 0;
-        text-align: center;
-        color: white;
-        background: url(./img/Design\ sem\ nome\ \(1\).png);
-        background-position: 30% 45%;
-        background-color: black;
-        
-    }
-    #msginiciar button{
-        top: 50%;
-        margin-left: -70px; 
-    }
-    #msginiciar #btiniciar .bi{
-        top:50%;
-        margin-left: -40%;
-    }
-    .navbar .container-fluid .navbar-brand{
-        margin: auto;
-    }
-    #cardapio{
-        background-color: rgb(255, 255, 255);
-        width: auto;
-        height: 1100px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    #cardapio #tamanho{
-        width: 300px;
-        height: 500px;
-        margin-left: 10vw;
-        position: absolute;
-        margin-bottom: 20px;
-    }
-    #cardapio #tamanho .bi{
-        margin-left: 40%;
-    }
-
-    #cardapio #acompanhamento{
-        width: 300px;
-        height: 500px;
-        margin-left: 10vw;
-        margin-top: 510px;
-        position: absolute;
-    
-    }
-    #cardapio #acompanhamento .bi{
-        margin-left: 40%;
-    }
-
-    #divslide {
-        width: auto;
-        height: 467px;
-        overflow: hidden;
-        background-color: rgba(137, 43, 226, 0.482);
-    }
-    #slides{
-        height: 366px;
-        width: auto;
-        border-radius: 20px;
-        position: absolute;
-        overflow: hidden;
-        margin-top: 50px;
-        margin-left: 2px;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }
-    #quemsomos #txtquemsomos{
-        width: 350px;
-        height: 400px;
-        background-color: #f09b3a98;
-        display: flex;
-        position: absolute;
-        margin-top: 30px;
-        margin-left: 3%;
-        border-radius: 300px;
-        color: white;
-        font-family: 'Caveat', cursive;
-    }
-    #final{
-        width: auto;
-        height: 500px;
-        background-color: #f19b1b;
-        position: relative;
-    }
-    #final img{
-        margin-left: 30%;
-        width: 200px;
-        height: 200px;
-    }
-    #final button{
-        margin-right: 5px;
-        border-top:none;
-        border-left: none;
-        border-right: none;
-        font-size: 20px;
-    }
-    #final #bt1{
-        margin-left: 1%;
-    }
-    #final #iconslist .bi{
-    margin-right: 50px;
-
+#tela3{
+    width: auto;
+    height: 600px;
+    background-color: rgb(140, 0, 255);
 }
-    
+#img1{
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 150px;
+}
+#txt1{
+    position: absolute;
+    width: 500px;
+    height: 530px;
+    float: right;
+    background-color: rgba(240, 248, 255, 0.198);
+    margin-right: 100px;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
     
 }
-
+#txt h4{
+    margin-top: 10px;
+    
+}
+#txt1 img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

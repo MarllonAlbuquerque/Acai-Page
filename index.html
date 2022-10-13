@@ -1,143 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <link rel="stylesheet" href="./index.css">
-      <meta name="viewport" content="width=, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-      <title>AÇAI JP</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff00;">
+        <div class="container-fluid">
+          <img id="logo" src="./img/tv-manacai-300x280.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#quemsomos">Quem Somos Nós?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cardapio" >Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Unidade</a>
+              </li>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div id="inicio">
+        <div id="btiniciar">
+            <a data-aos="fade-left" href="#cardapio"><button type="button" class="btn btn-outline-light">Cardápio |)(|</button></a>
+        </div>
+    </div>
+    <div id="divs">
+      <div id="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+
+        <div class="slide first">
+          <img src="./img/4136515.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/4136517.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./img/4136518.jpg" alt="">
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+
+        </div>
+
+      </div>
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+
+      </div>
       
-      <nav class="navbar navbar-expand-lg" style="background-color: #f19b1bf1;">
-          <div class="container-fluid">
-            <img id="logo" src="./img/tv-manacai-300x280.png" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#quemsomos">Quem Somos Nós?</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#cardapio" >Cardápio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" >Contato</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" >Unidade</a>
-                </li>
-                  <i class="bi bi-instagram"></i>
-                  <i class="bi bi-facebook"></i>
-              </ul>
-            </div>
-          </div>
-      </nav>
 
-      <div id="iniciar">
-          <div id="msginiciar">
-              <div id="btiniciar">
-                <a href="#cardapio"><button type="button" class="btn btn-outline-light">Cardápio</button></a>
-                <i class="bi bi-book-half"></i>
-              </div>
-          </div>
+    </div>
+    <div id="tela3">
+      <div id="img1">
+        <img src="./img/Tigela-Açaí-PNG.png" alt="">
+
       </div>
-      <div id="cardapio">
-        <h1>Qual nosso cardápio ?</h1>
-        <div data-aos="fade-left" id="tamanho">
-          <i class="bi bi-cup-straw"></i>
-          <h4 id="tit1" data-aos="fade-left">Tamanhos:</h4>
-          <h4 data-aos="fade-left">Copo de 300ml.....R$10,00</h4>
-          <h4 data-aos="fade-left">Copo de 500ml.....R$13,00</h4>
-          <h4 data-aos="fade-left">Copo de 700ml.....R$16,00</h4>
-          <h4 data-aos="fade-left">Copo de 500g.....R$17,00</h4>
-
-        </div>
-        <div id="acompanhamento" data-aos="fade-right">
-          <i class="bi bi-plus-circle-dotted"></i>
-          <h4 id="tit2" data-aos="fade-right">Adicionais:</h4>
-          <h4 data-aos="fade-right">Morango - Creme de Avelã</h4>
-          <h4 data-aos="fade-right">Banana - Chocoboli</h4>
-          <h4 data-aos="fade-right">Kiwi - Confete</h4>
-          <h4 data-aos="fade-right">Uva - Leite Condensado</h4>
-        </div>
-      </div>
-
-      <div id="divslide">
-        <div id="slides">
-          <div id="slidecamada2">
-            <input type="radio" name="radio" id="radio1">
-                      <input type="radio" name="radio" id="radio2">
-                      <input type="radio" name="radio" id="radio3">
-
-                      <div class="slide s1">
-                        <img src="./img/4136515.jpg" alt="">
-
-                      </div>
-                      <div class="slide">
-                        <img src="./img/4136517.jpg" alt="">
-
-                      </div>
-                      <div class="slide">
-                        <img src="./img/4136518.jpg" alt="">
-
-                      </div>
-
-                      <div id="navegacao">
-                        <label class="bar" for="radio1"></label>
-                        <label class="bar" for="radio2"></label>
-                        <label class="bar" for="radio3"></label>
-          </div>
-        </div>
-
-        </div>
+      <div id="txt1">
+        <img src="./img/icons8-milkshake-64.png" alt="">
+        <h3>CARDÁPIO</h3>
+        <h4 data-aos="fade-left">Tamanhos:</h4>
+        <h4 data-aos="fade-left">Copo de 300ml - R$10,00</h4>
+        <h4 data-aos="fade-left">Copo de 500ml - R$13,00</h4>
+        <h4 data-aos="fade-left">Copo de 700ml - R$16,00</h4>
+        <h4 data-aos="fade-left">Copo de 500g - R$17,00</h4>
 
       </div>
 
-      <div id="quemsomos" data-aos="fade-left">
-        <img src="./img/Tigela-Açaí-PNG.png" data-aos="fade-right" alt="">
-        
-        <div id="txtquemsomos" data-aos="fade-left">
-          <h3 data-aos="fade-left">Quem somos nós?</h3>
-          <h5 data-aos="fade-left"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Voluptate distinctio voluptatum officiis explicabo natus vel
-              totam in dolor autem repudiandae incidunt architecto blanditiis
-               maiores culpa, rem accusantium corporis eveniet iusto!</h5>
+    </div>
 
-        </div>
-        
-
-      </div>
-      <div id="final">
-        <img data-aos="fade-up" data-aos-anchor-placement="top-center" src="./img/tv-manacai-300x280.png" alt="">
-        <div id="btlista">
-          <button data-aos="fade-up" id="bt1" type="button" class="btn btn-outline-light">Cardápio</button>
-          <button data-aos="fade-up" type="button" class="btn btn-outline-light">Início</button>
-          <button data-aos="fade-up" type="button" class="btn btn-outline-light">Quem somos</button>
-          <button data-aos="fade-up" type="button" class="btn btn-outline-light">Unidades</button>
-          
-        </div>
-        <div id="iconslist">
-          <i data-aos="fade-up"class="bi bi-instagram"></i>
-          <i data-aos="fade-up"class="bi bi-facebook"></i>
-        </div>
-        <p>Desenvolvido pela HardSoft. Todos os direitos reservados. © 2022.</p>
-
-      </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-  </body>
+    <script src="./index.js"></script>
+</body>
 </html>
