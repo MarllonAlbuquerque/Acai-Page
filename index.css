@@ -1,5 +1,6 @@
 body {
 	overflow-x: hidden;
+    width: auto;
 }
 
 .navbar{
@@ -8,7 +9,6 @@ body {
     font-family: 'Caveat', cursive;
     border-bottom: 2px solid;
     border-color: rgba(0, 0, 0, 0.115);
-    overflow: hidden;
     position: absolute;
     background: url(./img/img2.jpg); 
 }
@@ -118,7 +118,7 @@ body {
     
     width: auto;
     height: 600px;
-    background:url(./img/imgcc.jpg);
+    background-color: rgb(174, 43, 226);
     overflow: hidden;
 }
 #slides{
@@ -174,6 +174,7 @@ body {
     width: auto;
     height: 600px;
     background-color: rgb(140, 0, 255);
+    overflow-x: hidden;
 }
 #img1{
     width: 400px;
@@ -190,9 +191,11 @@ body {
     background-color: rgba(240, 248, 255, 0.198);
     margin-right: 100px;
     border-radius: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
     color: #fff;
     text-align: center;
+    margin-left: 60%;
+    font-family: 'Fuzzy Bubbles', cursive;
     
 }
 #txt h4{
@@ -202,4 +205,26 @@ body {
 #txt1 img{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#tela4{
+    background-color: rgb(140, 0, 255);
+    width: auto;
+    height: 600px;
+    display: flex;
+    
+}
+#tela4 button{
+    width: 110px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: rgba(145, 255, 55, 0);
+    border-color: chartreuse;
+    color: chartreuse;
+    border-width: 3px;
+    border-radius: 40px;
+}
+#tela4 button:hover{
+    background-color: chartreuse;
+    color: #fff;
 }
