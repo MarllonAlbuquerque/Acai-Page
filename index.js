@@ -16,6 +16,8 @@ function nextImage(){
 
 
 
+
+
 let card = document.getElementById('card');
 let card2 = document.getElementById('card2');
 let x = true;
@@ -80,4 +82,62 @@ function exe4(){
         w=true;
   
       }  
+}
+
+
+
+
+
+let text2 = document.getElementById('txt2');
+let text1 = document.getElementById('txt1');
+let text3 = document.getElementById('txt3');
+let v1 = true;
+let v2 = true;
+let v3 = true;
+
+function teste1(){
+  if(v1==true){
+    text2.style.visibility='hidden';
+    text3.style.visibility='hidden';
+    text2.style.height='1px';
+    text3.style.height='1px';
+    text1.style.height='300px';
+    v1=false;
+  }else if(v1==false){
+    text2.style.visibility='inherit';
+    text3.style.visibility='inherit';
+    text2.style.height='60px';
+    text3.style.height='60px';
+    text1.style.height='60px';
+    v1=true;
+  }
+  
+  
+}
+
+
+function teste2(){
+  if(v2==true){
+    text3.style.visibility='hidden';
+    text3.style.height='1px';
+    text2.style.height='300px';
+    v2=false;
+  }else if(v2==false){
+    text3.style.visibility='inherit';
+    text3.style.height='60px';
+    text2.style.height='60px';
+    v2=true;
+
+  }
+  
+}
+
+function teste3(){
+  if(v3==true){
+    text3.style.height='300px';
+    v3=false;
+  }else if(v3==false){
+    text3.style.height='60px';
+    v3=true;
+  }
 }
