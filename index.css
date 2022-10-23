@@ -4,7 +4,7 @@ body {
 }
 
 .navbar{
-    height: 50px;
+    height: 70px;
     font-size: 20px;
     font-family: 'Caveat', cursive;
     border-bottom: 2px solid;
@@ -62,7 +62,10 @@ body {
 }
 
 .navbar .container-fluid #logo{
-    display: none;
+    width: 100px;
+    height: 100px;
+    margin-right: 250px;
+   
 }
 
 
@@ -479,11 +482,8 @@ body {
         width: 414px;
         overflow-x: hidden;
     }
-
     .navbar .container-fluid #logo{
-        margin-left:auto;
-        width: 85px;
-        height: 85px;
+        display: none;
     }
     #inicio{
         display: block;
